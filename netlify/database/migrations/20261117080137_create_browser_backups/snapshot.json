@@ -1,0 +1,66 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "b9bf50a4-d869-45c1-8162-547a118f63d6",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "daystar_browser_backups",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "owner_hash",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "daystar_browser_backups"
+    },
+    {
+      "type": "jsonb",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "payload",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "daystar_browser_backups"
+    },
+    {
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "daystar_browser_backups"
+    },
+    {
+      "columns": [
+        "owner_hash"
+      ],
+      "nameExplicit": false,
+      "name": "daystar_browser_backups_pkey",
+      "schema": "public",
+      "table": "daystar_browser_backups",
+      "entityType": "pks"
+    }
+  ],
+  "renames": []
+}
